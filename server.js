@@ -7,7 +7,7 @@ require('dotenv').config();
 // Initialize Express app
 const app = express();
 const PORT = process.env.PORT || 3000;
-app.listen(PORT);
+
 
 // MongoDB connection
 let db;
@@ -192,7 +192,7 @@ app.put('/api/lessons/:id', async (req, res) => {
     res.status(500).json({ error: 'Failed to update lesson' });
   }
 });
-
+ app.listen(PORT)
 // ============================================
 // START SERVER
 // ============================================
