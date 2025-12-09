@@ -192,7 +192,7 @@ app.put('/api/lessons/:id', async (req, res) => {
     res.status(500).json({ error: 'Failed to update lesson' });
   }
 });
- app.listen(PORT)
+
 // ============================================
 // START SERVER
 // ============================================
