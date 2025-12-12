@@ -48,7 +48,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// Static file middleware - serves images from 'public' folder
+
 app.use('/images', express.static('public/images', {
   // Custom error handler for missing files
   setHeaders: (res, path) => {
