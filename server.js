@@ -117,7 +117,7 @@ app.get('/api/search', async (req, res) => {
       });
     }
     
-    // Search in MongoDB using regex (case-insensitive)
+
     // Searches in: subject, location, price, and spaces
     const lessons = await db.collection('lessons').find({
       $or: [
